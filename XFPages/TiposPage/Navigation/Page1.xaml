@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFPages.TiposPage.Navigation.Page1"
+             Title="Titulo Navigations">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Home" Icon="img/Item1.png"/>
+        <ToolbarItem Text="Twitter" Icon="img/Item2.png"/>
+        <ToolbarItem Text="Pesquisa" Icon="img/Item3.png" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Page1"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            
+            <Button Text="Ir para Page2" Clicked="MudarPage2"/>
+
+            <Button Text="Ir Modal" Clicked="MudarModal" ></Button>
+
+            <Button Text="Ir Master" Clicked="ChamarMaster" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
